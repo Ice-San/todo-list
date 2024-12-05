@@ -1,0 +1,63 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 25px;
+
+    border: 2.3px solid black;
+    border-radius: 6px;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    padding: 8px 20px;
+
+    width: auto;
+    height: auto;
+
+    transition: 0.3s all ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(0.85);
+    transition: 0.3s all ease-in-out;
+}
+
+.btn-transparent {
+    border: 2.3px solid black;
+}
+
+.btn-transparent:hover {
+    background-color: black;
+    color: white;
+
+    transition: 0.3s all ease-in-out;
+}
+
+.btn-background {
+    background-color: black;
+    color: white;
+}
+
+.btn-background:hover {
+    background-color: transparent;
+    color: black;
+    
+    transition: 0.3s all ease-in-out;
+}
+
+@media (min-width: 1600px) {
+    .btn {
+        font-size: 2.3vw;
+
+        border: 0.13vw solid black;
+        border-radius: 0.5vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .btn {
+        font-size: 23px;
+    }
+}
