@@ -1,12 +1,24 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { Header } from './components/Header';
-import { Hero } from './components/Hero';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import { Header } from './pages/homepage/Header';
+import { Hero } from './pages/homepage/Hero/';
+import { Signin } from "./pages/signin";
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Header />
-    <Hero />
+        <Router>
+          <Routes>
+            <Route path="/" element={
+                <>
+                    <Header />
+                    <Hero />
+                </>
+            } />
+            <Route path="/signin" element={<Signin />} />
+          </Routes>
+        </Router>
   </StrictMode>,
 );
