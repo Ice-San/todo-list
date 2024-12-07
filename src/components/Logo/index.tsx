@@ -1,10 +1,14 @@
 import '../../index.css';
 import './index.css';
 
-export const Logo = () => {
+type LogoType = {
+    sizedClass: string;
+}
+
+export const Logo = ({sizedClass}: LogoType) => {
     return (
-        <div className="logo">
-            <div className="logo-container imgs-container"></div>
+        <div className={sizedClass}>
+            <div className='logo-container imgs-container'></div>
         </div>
     );
 };

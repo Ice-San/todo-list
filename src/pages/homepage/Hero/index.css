@@ -50,7 +50,7 @@
 }
 
 .illustration-container {
-    background-image: url("./img/hero-gif.gif");
+    background-image: url("/homepage/hero-gif.gif");
 }
 
 @media (max-width: 910px) {

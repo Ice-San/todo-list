@@ -7,7 +7,7 @@ export const Header = () => {
     return (
     <div className="header">
         <Link to='/'>
-            <Logo />
+            <Logo sizedClass='logo' />
         </Link>
 
         <Link to='/signin/'>
